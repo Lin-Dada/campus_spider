@@ -14,12 +14,11 @@ def send(title,content):
     password = ''#授权码
 
     # 发送和接收邮箱
-    sender = 'linpeng233@163.com'
-    receive = 'linpeng233@163.com'
+    sender = '' #你自己的邮箱
+    receive = '' #接受者，可以是你自己的邮箱
 
     # 发送邮件主题和内容
     subject = title
-    #content = '<html><h1 style="color:red">自动化测试报告!</h1></html>'
     content = content
     # HTML邮件正文
     msg = MIMEText(content, 'plain', 'utf-8')
