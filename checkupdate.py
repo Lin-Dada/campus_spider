@@ -23,8 +23,6 @@ def check():
     new_lect = []
     start = True
     while(True):
-        #header['Host'] = 'lindada.com.cn'
-        #url = 'http://lindada.com.cn/test'
         with open('/root/web/profile/cookie.txt', 'r') as f:
             header['Cookie'] = f.read()
         texts = requests.get(url, headers=header).text
